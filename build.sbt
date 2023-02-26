@@ -1,7 +1,5 @@
 ThisBuild / scalaVersion := "3.2.2"
-ThisBuild / organization := "com.example"
-// ThisBuild / assemblyOutputPath in assembly := file(s"exec/${(assembly/assemblyJarName).value}") 
-// Global / assembly / target := file("exec/")
+ThisBuild / organization := "ru.bmstu"
 
 lazy val general = (project in file("general"))
   .settings(

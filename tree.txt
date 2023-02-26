@@ -1,0 +1,18 @@
+lab1/
+├── src
+│   └── main
+│       └── scala
+│           ├── main.scala
+│           ├── var1
+│           │   ├── task1.scala
+│           │   └── task2.scala
+│           └── var2
+│               ├── task1.scala
+│               └── task2.scala
+└── target
+    ├── scala-3.2.2
+    │   └── *output omitted*
+    └── streams
+        └── *output omitted*
+
+183 directories, 94 files
