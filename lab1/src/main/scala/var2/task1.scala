@@ -1,14 +1,13 @@
 package var2.task1
-import bmstu.general._
 import scala.io.StdIn
 
 def main() =
-  println("Put down your words separated by spaces:")
+  println("Put down your ints separated by spaces:")
   val str = StdIn.readLine()
-  val words = str.split(" ")
-  val lengths = words.map(_.distinct.length()) // finds how many distinct letters in each word
-  // words.apply(lengths.indexOf(lengths.min))
-  print("Found word: ")
-  lengths.min |> (lengths.indexOf(_)) |> words.apply |> (println(_)) // get minimum of distinct letters, 
-              // get a corresponding position (first of), and retrieve the word by index from original array
+  val ints = str.split(" ").map(_.toInt)
+  val filtered = ints.filter( i => (divisible_by(i, 5) && divisible_by(i, 7)))
+  println(s"""Integers, devisable both by 5 and by 7:
+            |${filtered.mkString(" ")}""".stripMargin)
 
+def divisible_by(n: Int, div: Int) =
+  n % div == 0

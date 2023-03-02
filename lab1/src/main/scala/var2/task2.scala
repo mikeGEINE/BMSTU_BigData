@@ -1,21 +1,28 @@
 package var2.task2
-import bmstu.general._
 import scala.io.StdIn
 
 def main() =
-  println("Put down your words separated by spaces:")
+  println("Put down your ints separated by spaces:")
   val str = StdIn.readLine()
-  val words = str.split(" ")
-  val latin_regex = """[^a-zA-Z]""".r.unanchored
-  val latin = words.filter(! latin_regex.matches(_)) // if there is no other chars then [a-zA-Z], then a word is all latin
-  println(s"Only latin words: ${latin.length}")
-  println(latin.mkString(" "))
-  val latin_eq = latin.filter(vowel_check(_))
-  println(s"Words with equal counts of vowels and consonants: ${latin_eq.length}")
-  println(latin_eq.mkString(" "))
+  val ints = str.split(" ").map(_.toInt)
+  val sorted = bubbleSortByAbsDescending(ints)
+  println(s"""Integers, sorted by their absolute values:
+    |${sorted.mkString(" ")}""".stripMargin)
 
-
-def vowel_check(word: String): Boolean =
-  val vowels_regex = """[eyuioaEYUIOA]""".r
-  val vowels = vowels_regex.findAllIn(word).length
-  vowels == (word.length - vowels)
+def bubbleSortByAbsDescending(arr: Array[Int]): Array[Int] = {
+  var swapped = true
+  var end = arr.length - 1
+  while (swapped) {
+    swapped = false
+    for (i <- 0 until end) {
+      if (math.abs(arr(i)) > math.abs(arr(i + 1))) {
+        val temp = arr(i)
+        arr(i) = arr(i + 1)
+        arr(i + 1) = temp
+        swapped = true
+      }
+    }
+    end -= 1
+  }
+  arr.reverse
+}

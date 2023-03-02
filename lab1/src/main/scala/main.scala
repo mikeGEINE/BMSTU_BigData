@@ -50,7 +50,7 @@ def print_help() =
   lab1 [OPTIONS] [INTEGERS]
     [OPTIONS]
       --help      Prints help message
-      -p TASKS    Allows partial execution of tasks. TASK is a sting of digits from 1 to 4.
+      -p TASKS    Allows partial execution of tasks. TASK is a sting of digits from 1 to 2.
     [INTEGERS]
       List of integers separated by space; used for Task 2 (Sum and mul)
   """)
