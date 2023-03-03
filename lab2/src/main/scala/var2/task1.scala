@@ -24,14 +24,14 @@ def printMatrix(matrix: Array[Array[Int]]):Unit =
   println(row.mkString(", "))
   }
 
-def sumBetweenNegatives(row: Array[Int]): Int =
-  val firstNeg = row.indexWhere(_ < 0, from = 0)
-  if firstNeg >= 0 then
-    val secondNeg = row.indexWhere(_ < 0, from = firstNeg + 1)
-    if secondNeg > 0 then
-      row.slice(firstNeg + 1, secondNeg).sum
+def sumBetweenPositives(row: Array[Int]): Int =
+  val firstPos = row.indexWhere(_ > 0, from = 0)
+  if firstPos >= 0 then
+    val secondPos = row.indexWhere(_ > 0, from = firstPos + 1)
+    if secondPos > 0 then
+      row.slice(firstPos + 1, secondPos).sum
     else
-      row.slice(firstNeg + 1, row.length).sum
+      row.slice(firstPos + 1, row.length).sum
   else
     row.sum
   

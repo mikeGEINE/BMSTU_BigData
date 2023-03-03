@@ -15,7 +15,7 @@ def bubbleSortByAbsDescending(arr: Array[Int]): Array[Int] = {
   while (swapped) {
     swapped = false
     for (i <- 0 until end) {
-      if (math.abs(arr(i)) > math.abs(arr(i + 1))) {
+      if (math.abs(arr(i)) < math.abs(arr(i + 1))) {
         val temp = arr(i)
         arr(i) = arr(i + 1)
         arr(i + 1) = temp
@@ -24,5 +24,5 @@ def bubbleSortByAbsDescending(arr: Array[Int]): Array[Int] = {
     }
     end -= 1
   }
-  arr.reverse
+  arr
 }
