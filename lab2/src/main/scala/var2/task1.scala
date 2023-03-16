@@ -9,7 +9,7 @@ def main() =
   println("The Matrix:")
   val matrix = createMatrix(n)
   printMatrix(matrix)
-  println(s"Sum of elements: ${matrix.map(sumBetweenNegatives(_)).sum}")
+  println(s"Sum of elements: ${matrix.map(sumBetweenPositives(_)).sum}")
 
 def createMatrix(n: Int): Array[Array[Int]] = 
   val random = new Random()

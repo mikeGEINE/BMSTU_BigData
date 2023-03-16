@@ -21,3 +21,11 @@ lazy val lab2 = (project in file("lab2"))
     assembly / target := file("exec/")
   )
   .dependsOn(general)
+
+lazy val lab3 = (project in file("lab3"))
+  .settings(
+    name := "Lab 3",
+    assembly / assemblyJarName := "lab3.jar",
+    assembly / target := file("exec/")
+  )
+  .dependsOn(general)
