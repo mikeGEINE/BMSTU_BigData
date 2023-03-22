@@ -29,3 +29,11 @@ lazy val lab3 = (project in file("lab3"))
     assembly / target := file("exec/")
   )
   .dependsOn(general)
+
+lazy val lab4 = (project in file("lab4"))
+  .settings(
+    name := "Lab 4",
+    assembly / assemblyJarName := "lab4.jar",
+    assembly / target := file("exec/"),
+    libraryDependencies += "com.github.nscala-time" %% "nscala-time" % "2.32.0"
+  )
