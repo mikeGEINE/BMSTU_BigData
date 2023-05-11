@@ -9,7 +9,7 @@ import scala.annotation.tailrec
   argmap.get("help") match
     case None => 
       val tasks = argmap.get("tasks") match
-        case None => "12"
+        case None => "1234"
         case Some(value) => value
 
       argmap.get("io") match
