@@ -94,3 +94,39 @@ TASKS is a string of digits from 1 to 8 without spaces. Order of digits controls
 `-o PATH` Path to an output file (DEFAULT=output)
  
 `--help` prints a simple help message with definitions of cmd line arguments. 
+
+# Lab 6
+
+Shares the same interface as Lab 5. 
+
+To run an executable in your terminal:
+```Shell
+java -jar exec/lab6.jar [cmd line arguments]
+```
+
+# Lab 7
+
+Shares the same interface as Lab 5. 
+
+To run an executable in your terminal:
+```Shell
+java -jar exec/lab7.jar [cmd line arguments]
+```
+
+# Lab 8
+
+Shares the same interface as Lab 5. 
+
+To run an executable in your terminal:
+```Shell
+java -jar exec/lab8.jar [cmd line arguments]
+```
+
+# Lab 9
+
+Shares the same interface as Lab 5. 
+
+To run an executable in your terminal:
+```Shell
+java -jar exec/lab9.jar [cmd line arguments]
+```
