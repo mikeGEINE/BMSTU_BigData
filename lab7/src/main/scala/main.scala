@@ -26,7 +26,7 @@ import scala.annotation.tailrec
   
 
   println(s"""|Developer: mikeGEINE
-  |Task recieved on: Mon Mar 10 19:34:00 MSK 2023
+  |Task recieved on: Fri Mar 31 15:05:00 MSK 2023
   |Task completed (this run) on: ${new Date()}""".stripMargin)
 
 def parseArgs(list: List[String]): Map[String, String] =
