@@ -58,3 +58,10 @@ lazy val lab7 = (project in file("lab7"))
     assembly / assemblyJarName := "lab7.jar",
     assembly / target := file("exec/")
   )
+
+lazy val lab8 = (project in file("lab8"))
+  .settings(
+    name := "Lab 8",
+    assembly / assemblyJarName := "lab8.jar",
+    assembly / target := file("exec/")
+  )
