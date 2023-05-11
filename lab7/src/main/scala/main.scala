@@ -92,7 +92,7 @@ def run_tasks(tasks: String, input: String, output: String) =
 
 def print_help() =
   println("""
-  |lab5 [OPTIONS]
+  |lab7 [OPTIONS]
   | [OPTIONS]
   |   --help      Prints help message
   |   -p TASKS    Allows partial execution of tasks. TASK is a sting of digits from 1 to 8.

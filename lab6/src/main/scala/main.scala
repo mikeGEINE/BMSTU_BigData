@@ -74,10 +74,10 @@ def run_tasks(tasks: String, input: String, output: String) =
 
 def print_help() =
   println("""
-  |lab5 [OPTIONS]
+  |lab6 [OPTIONS]
   | [OPTIONS]
   |   --help      Prints help message
-  |   -p TASKS    Allows partial execution of tasks. TASK is a sting of digits from 1 to 8.
+  |   -p TASKS    Allows partial execution of tasks. TASK is a sting of digits from 1 to 4.
   |   -io PATH    Path to a file with paths to input and output files (overrides -i and -o).
   |   -i PATH     Path to an input file (DEFAULT=input). 
   |   -o PATH     Path to an output file (DEFAULT=output)
