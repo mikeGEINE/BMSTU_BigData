@@ -5,7 +5,6 @@ import scala.io.StdIn
 import scala.util.{Try, Success, Failure, Using}
 import scala.annotation.tailrec
 
-
 def test(input: String, output:String): Unit =
   Using.Manager {use =>
     val source = use(scala.io.Source.fromFile(input))

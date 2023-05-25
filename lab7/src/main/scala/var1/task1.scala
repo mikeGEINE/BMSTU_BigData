@@ -9,7 +9,7 @@ import scala.annotation.tailrec
 def test(input: String, output:String): Unit =
   println("Enter word length: ")
   val len = StdIn.readLine().toInt
-  println("Enter substitution sting: ")
+  println("Enter substitution string: ")
   val sub = StdIn.readLine()
 
   Using.Manager {use =>

@@ -8,7 +8,7 @@ import scala.annotation.tailrec
 def test(input: String, output:String): Unit =
   println("Enter insertion position: ")
   val pos = StdIn.readLine().toInt
-  println("Enter insertion sting: ")
+  println("Enter insertion string: ")
   val str = StdIn.readLine()
 
   Using.Manager {use =>
